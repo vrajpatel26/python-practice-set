@@ -1,1 +1,2 @@
-print()
+
+        if i in lst2:

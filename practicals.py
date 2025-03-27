@@ -282,7 +282,7 @@ for i in range(1, n + 1):
 # **
 # *
 
-
+"""
 n = 5
 
 # Loop to print the pattern
@@ -290,3 +290,86 @@ for i in range(n, 0, -1):  #Outer loop starts from n and decreases to 1.
     for j in range(i):
         print("*", end="")
     print()  # Move to the next line
+    """
+
+
+#----------------------------------- set 4----------------------------------------
+
+#4.5 Write a python program to print list of prime numbers upto N using loop And else clause. 
+
+
+
+#4.9 Write a Python program to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings.
+"""
+lst = ["abca","bdb","aaeef","a","adrd"]
+
+count = 0
+
+for i in lst:
+    if len(i)>=2 and i[0] == i[-1]:
+        count += 1
+
+print(count)
+
+"""
+
+
+# 4.10 Write a Python program to remove duplicates from a list.
+
+"""
+lst1 = [1,2,3,3,4,5,6,5]
+lst2 = []
+
+for i in lst1:
+    if i not in lst2:
+        lst2.append(i)
+print(lst2)
+"""
+
+
+# 4.11 Write a Python program to find the list of words that are longer than n from a given string.
+"""
+a = []
+string = str(input("Enter String :"))
+
+a.extend(string.split())
+
+words = []
+for i in a:
+    if len(i)>4:
+        words.append(i)
+
+print(words)
+"""
+
+
+# 4.12 Write a Python function that takes two lists and returns True if they have at least
+# one common member.
+
+"""
+lst1 = [1,2,3,4]
+lst2 = [3,4,5,6]
+
+def commonMember(lst1,lst2):
+    for i in lst1:
+        if i in lst2:
+            return True
+    return False
+
+result = commonMember(lst1,lst2)
+
+print(result)
+"""
+
+
+# 4.13 Write a Python program to print the numbers of a specified list after removing
+# even numbers from it.
+
+
+lst1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+lst2 = []
+
+for i in lst1:
+    if i % 2 != 0:
+        lst2.append(i)
+print("List after removing even numbers: ",lst2)
